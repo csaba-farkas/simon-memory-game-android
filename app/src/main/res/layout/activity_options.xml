@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="@string/app_name">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/toggle_off"
+        android:textOn="@string/toggle_on"
+        android:id="@+id/optionsToggle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/options_spinner"
+        android:entries="@array/spinner_elements"
+        android:background="#05B3D5"
+        android:layout_below="@+id/optionsToggle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_button"
+        android:id="@+id/start_button"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/seekbar_text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/select_game"
+        android:id="@+id/start_text"
+        android:layout_below="@+id/optionsToggle"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#05B3D5"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/startProgressBar"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/starting"
+        android:id="@+id/starting_text"
+        android:layout_above="@+id/startProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:textColor="#05B3D5"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/start_seekbar_text"
+        android:id="@+id/start_seekbar_text"
+        android:textColor="#05B3D5"
+        android:layout_below="@+id/options_spinner"
+        android:layout_alignStart="@+id/startProgressBar"
+        android:layout_marginTop="20dp" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/seekbar_easy"
+        android:id="@+id/seekbar_text"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#05B3D5"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>

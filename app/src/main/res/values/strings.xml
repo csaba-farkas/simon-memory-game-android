@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Simon Says</string>
+    <string name="toggle_on">Blue</string>
+    <string name="toggle_off">Black</string>
+    <string-array name="spinner_elements">
+        <item>New Game - Easy</item>
+        <item>New Game - Medium</item>
+        <item>New Game - Hard</item>
+    </string-array>
+    <string name="start_button">Start</string>
+    <string name="select_game">Select game or...</string>
+    <string name="starting">Starting...</string>
+    <string name="start_seekbar_text">Set difficulty manually</string>
+    <string name="seekbar_easy">Easy</string>
+    <string name="seekbar_medium">Medium</string>
+    <string name="seekbar_hard">Hard</string>
+    <string name="high_score">HIGH SCORE: </string>
+    <string name="game_over_message">Game over! Total: </string>
+    <string name="game_over_hs_message">Game over! New High Score!! Total: </string>
+    <string name="ok_dialog">OK</string>
+    <string name="start_textview">Draw a \'Z\' on this screen to start the game!</string>
+    <string name="goto_website">Go to website</string>
+    <string name="menu_exit">Exit</string>
+</resources>
